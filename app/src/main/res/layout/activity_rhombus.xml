@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".bangunDatar.Rhombus">
+
+    <View
+        android:id="@+id/top_view"
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:background="@drawable/background_datar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <TextView
+        android:id="@+id/textRhombus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BELAH KETUPAT"
+        android:textColor="@color/black"
+        android:textSize="40dp"
+        android:fontFamily="@font/super_positive"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textRumus"
+        app:layout_constraintTop_toBottomOf="@id/textRhombus"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="L = 1/2 * d1 * d2"
+        android:fontFamily="@font/popping_cute"
+        android:textColor="@color/black"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/rhombus_diagonal1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/rhombus_diagonal2"
+        app:layout_constraintTop_toBottomOf="@id/top_view"
+        android:layout_margin="50dp"
+        android:background="@drawable/border"
+        android:hint="Masukkan diagonal 1"
+        android:textColor="@color/white"
+        android:inputType="number"
+        android:padding="10dp"
+        android:textColorHint="@color/white"/>
+
+    <EditText
+        android:id="@+id/rhombus_diagonal2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rhombus_diagonal1"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border"
+        android:hint="Masukkan diagonal 2"
+        android:textColor="@color/white"
+        android:inputType="number"
+        android:padding="10dp"
+        android:textColorHint="@color/white"/>
+
+    <TextView
+        android:id="@+id/rhombus_hasil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rhombus_diagonal2"
+        android:text="Hasil"
+        android:background="@drawable/border"
+        android:textColor="@color/white"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:padding="10dp"
+        android:textSize="18dp"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/rhombus_calculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/rhombus_hasil"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:backgroundTint="#40C057"
+        android:fontFamily="@font/super_positive"
+        android:text="Calculate"
+        android:textSize="20dp"
+        android:textColor="@color/white"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
