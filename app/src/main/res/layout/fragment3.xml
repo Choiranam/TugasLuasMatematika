@@ -21,7 +21,6 @@
         android:textSize="30dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="60dp"/>
-
     <ImageView
         android:id="@+id/picture"
         android:layout_width="140dp"
@@ -32,9 +31,8 @@
         android:background="@drawable/circle_background"
         android:src="@drawable/baseline_account_circle_24"/>
 
-    <!-- TextView yang ingin ditambahkan di bawah profil -->
     <TextView
-        android:id="@+id/textExtra"
+        android:id="@+id/textProgrammer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Programmer"
@@ -42,6 +40,17 @@
         android:textSize="18dp"
         android:layout_below="@id/picture"
         android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textExtra2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="mchoiranam@gmail.com"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:layout_below="@id/textProgrammer"
+        android:layout_centerHorizontal="true" />
+
 
     <androidx.cardview.widget.CardView
         android:id="@+id/card1"
@@ -82,18 +91,34 @@
     </androidx.cardview.widget.CardView>
 
     <Button
-        android:id="@+id/logout"
+        android:id="@+id/message"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
         android:layout_marginEnd="50dp"
-        android:backgroundTint="#7C4DFF"
-        android:layout_marginTop="175dp"
+        android:backgroundTint="#40C057"
+        android:layout_marginTop="74dp"
         android:layout_below="@id/card1"
         android:gravity="center"
         android:text="MESSAGE"
         android:fontFamily="@font/super_positive"
         android:textSize="20dp"
         android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:backgroundTint="#40C057"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/message"
+        android:fontFamily="@font/super_positive"
+        android:gravity="center"
+        android:text="LOGOUT"
+        android:textSize="20dp"
+        android:textColor="@color/white"/>
+
 
 </RelativeLayout>
